@@ -1,0 +1,118 @@
+track superTrack1
+superTrack on show
+shortLabel  Ex. superTrack on
+longLabel A super-track of related data of various types together: individual, multiWig, and composite
+html examplePage
+
+                track st1bigWig1
+                parent superTrack1
+                bigDataUrl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeCshlLongRnaSeq/wgEncodeCshlLongRnaSeqA549CellLongnonpolyaPlusRawSigRep2.bigWig
+                shortLabel bigWig example inside a super-track
+                longLabel This super-track-contained bigWig file is an example from the ENCODE RNA-seq CSHL track
+                type bigWig
+                visibility full
+                maxHeightPixels 500:15:8
+                viewLimits 1:10
+                priority 10
+
+                track st1bam1
+                parent superTrack1
+                bigDataUrl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeCshlLongRnaSeq/wgEncodeCshlLongRnaSeqA549CellPapAlnRep1.bam
+                shortLabel BAM example inside super-track
+                longLabel This super-track-contained BAM file is an example from the ENCODE RNA-seq CSHL track
+                type bam
+                visibility dense
+                priority 20
+
+                track st1bigBed1
+                parent superTrack1
+                bigDataUrl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeCaltechRnaSeq/wgEncodeCaltechRnaSeqGm12892R2x75Il200JunctionsRep3V3.bigBed
+                shortLabel bigBed example inside super-track
+                longLabel This super-track-contained bigBed file is an example from the ENCODE RNA-seq Caltech track
+                type bigBed
+                visibility squish
+                priority 30
+
+                track st1vcf1
+                parent superTrack1
+                bigDataUrl http://hgdownload.soe.ucsc.edu/gbdb/hg19/1000Genomes/ALL.chr2.integrated_phase1_v3.20101123.snps_indels_svs.genotypes.vcf.gz
+                shortLabel chr2 VCF example inside super-track
+                longLabel This super-track-contained chr2 VCF file is an example from the 1000 Genomes Phase 1 Integrated Variant Calls track
+                type vcfTabix
+                visibility hide
+                priority 40
+
+                track st1multiWig1
+                parent superTrack1
+                container multiWig      
+                shortLabel MulitWig example inside super-track
+                longLabel This super-track-contained transparent overlay multWig feature uses three bigWig files from the ENCODE RNA-seq CSHL track
+                type bigWig
+                visibility full
+                aggregate transparentOverlay
+                showSubtrackColorOnUi on
+                maxHeightPixels 500:50:8
+                priority 50
+
+                                track st1wg1wig1
+                                bigDataUrl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeCshlLongRnaSeq/wgEncodeCshlLongRnaSeqA549CellLongnonpolyaMinusRawSigRep1.bigWig
+                                shortLabel Overlay bigWig1
+                                longLabel This is an example bigWig1 displaying Raw Signal from the ENCODE RNA-seq CSHL track, grouped inside a super-track.
+                                parent st1multiWig1
+                                type bigWig
+                                color 255,0,0
+
+                                track st1mw1wig2
+                                bigDataUrl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeCshlLongRnaSeq/wgEncodeCshlLongRnaSeqA549CellLongnonpolyaPlusRawSigRep1.bigWig
+                                shortLabel Overlay bigWig2
+                                longLabel This is an example bigWig2 displaying Raw Signal from the ENCODE RNA-seq CSHL track, grouped inside a super-track.
+                                parent st1multiWig1
+                                type bigWig
+                                color 0,255,0
+
+                                track st1mw1wig3
+                                bigDataUrl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeCshlLongRnaSeq/wgEncodeCshlLongRnaSeqAg04450CellLongnonpolyaPlusRawSigRep1.bigWig
+                                shortLabel Overlay bigWig3
+                                longLabel This is an example bigWig3 displaying Raw Signal from the ENCODE RNA-seq CSHL track, grouped inside a super-track.
+                                parent st1multiWig1
+                                type bigWig
+                                color 95,158,160
+
+
+               track st1composite1
+               parent superTrack1
+               compositeTrack on
+               shortLabel Ex. ST Composite
+               longLabel This super-track-contained composite track example groups related BAM information together into subtracks.
+               visibility dense
+               type bam
+               priority 60
+
+                                track st1composite1Bam1
+                                bigDataUrl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeOpenChromDnase/wgEncodeOpenChromDnase8988tAlnRep1.bam
+                                shortLabel Composite within SuperTrack BAM 1
+                                longLabel This is an example BAM in a SuperTrack composite track from the ENCODE Open Chrom DNase track.
+                                parent st1composite1 on
+                                type bam
+
+                                track st1composite1Bam2
+                                bigDataUrl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeOpenChromDnase/wgEncodeOpenChromDnaseAdultcd4th0AlnRep1.bam
+                                shortLabel Composite within SuperTrack BAM 2
+                                longLabel This is an example BAM in a SuperTrack composite track from the ENCODE Open Chrom DNase track.
+                                parent st1composite1 on
+                                type bam
+
+                                track st1composite1Bam3
+                                bigDataUrl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeOpenChromDnase/wgEncodeOpenChromDnaseFibroblgm03348AlnRep2.bam
+                                shortLabel Composite within SuperTrack BAM 3
+                                longLabel This is an example BAM in a SuperTrack composite track from the ENCODE Open Chrom DNase track.
+                                parent st1composite1 on
+                                type bam
+
+                                track st1composite1Bam4
+                                bigDataUrl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeOpenChromDnase/wgEncodeOpenChromDnaseK562G2mphaseAlnRep3.bam
+                                shortLabel Composite within SuperTrack BAM 4
+                                longLabel This is an example BAM in a superTrack composite track from the ENCODE Open Chrom DNase track.
+                                parent st1composite1 off
+                                type bam
+

@@ -1,0 +1,65 @@
+track composite1
+type bam
+compositeTrack on
+shortLabel Ex. compositeTrack on
+longLabel This composite track groups related bam subtracks together.
+visibility dense
+priority 2
+html examplePage
+
+
+                track composite1Bam1
+                bigDataUrl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeOpenChromDnase/wgEncodeOpenChromDnase8988tAlnRep1.bam
+                shortLabel Example BAM 1
+                longLabel This is an example BAM in a composite track from the ENCODE Open Chrom DNase track.
+                parent composite1 off
+                type bam
+
+                track composite1Bam2
+                bigDataUrl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeOpenChromDnase/wgEncodeOpenChromDnaseAdultcd4th0AlnRep1.bam
+                shortLabel Example BAM 2
+                longLabel This is an example BAM in a composite track from the ENCODE Open Chrom DNase track.
+                parent composite1 off
+                type bam
+
+                track composite1Bam3
+                bigDataUrl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeOpenChromDnase/wgEncodeOpenChromDnaseFibroblgm03348AlnRep2.bam
+                shortLabel Example BAM 3
+                longLabel This is an example BAM in a composite track from the ENCODE Open Chrom DNase track.
+                parent composite1 off
+                type bam
+
+                track composite1Bam4
+                bigDataUrl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeOpenChromDnase/wgEncodeOpenChromDnaseK562G2mphaseAlnRep3.bam
+                shortLabel Example BAM 4
+                longLabel This is an example BAM in a composite track from the ENCODE Open Chrom DNase track.
+                parent composite1 on
+                type bam
+
+                track composite1Bam5
+                bigDataUrl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeOpenChromDnase/wgEncodeOpenChromDnaseProgfibAlnRep2.bam
+                shortLabel Example BAM 5
+                longLabel This is an example BAM in a composite track from the ENCODE Open Chrom DNase track.
+                parent composite1 on
+                type bam
+
+                track composite1Bam6
+                bigDataUrl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeOpenChromDnase/wgEncodeOpenChromDnaseOsteoblAlnRep1.bam
+                shortLabel Example BAM 6
+                longLabel This is an example BAM in a composite track from the ENCODE Open Chrom DNase track.
+                parent composite1 on
+                type bam
+
+                track composite1Bam7
+                bigDataUrl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeOpenChromDnase/wgEncodeOpenChromDnaseT47dEst10nm30mAlnRep2.bam
+                shortLabel Example BAM 7
+                longLabel This is an example BAM in a composite track from the ENCODE Open Chrom DNase track.
+                parent composite1 on
+                type bam
+
+                track composite1Bam8
+                bigDataUrl http://hgdownload.soe.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeOpenChromDnase/wgEncodeOpenChromDnaseUrothelUt189AlnRep1V2.bam
+                shortLabel Example BAM 8
+                longLabel This is an example BAM in a composite track from the ENCODE Open Chrom DNase track.
+                parent composite1 on
+                type bam

@@ -1,0 +1,6 @@
+hub ZebraFinchLoganSearch
+shortLabel LoganSearch Zebra Finch
+longLabel Test track for logan search data
+genomesFile genomes.hg19.txt
+email pks5769@psu.edu
+descriptionUrl https://raw.githubusercontent.com/Smeds/bigWigTest/refs/heads/main/hub.txt

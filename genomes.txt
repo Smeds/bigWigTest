@@ -1,2 +1,2 @@
 genome hub_6477373_GCF_003957565.2
-trackDb hub_6477373_GCF_003957565.2/trackDb.txt 
+trackDb hub_6477373_GCF_003957565.2/trackDb.comp.txt 

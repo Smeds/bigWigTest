@@ -2,7 +2,7 @@ track multiWigUniqueTrackName
 type bigWig
 shortLabel compTrack
 longLabel kkddkdk
-container multiWig
+compositeTrack on
 aggregate transparentOverlay
 showSubtrackColorOnUi on
 maxHeightPixels 500:100:8
