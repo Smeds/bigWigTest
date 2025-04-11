@@ -1,0 +1,26 @@
+track multiWigUniqueTrackName
+shortLabel compTrack
+longLabel kkddkdk
+container multiWig
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+maxHeightPixels 500:100:8
+descriptionUrl https://raw.githubusercontent.com/Smeds/bigWigTest/refs/heads/main/description.html
+	
+	track Aves
+	shortLabel Aves bird
+	longLabel fjjsf
+	bigDataUrl https://raw.githubusercontent.com/Smeds/bigWigTest/refs/heads/main/test-Aves.bw
+	type bigWig
+	parent multiWigUniqueTrackName on
+	color 255,0,0
+	descriptionUrl https://raw.githubusercontent.com/Smeds/bigWigTest/refs/heads/main/description.html
+	
+	track Mammalia
+	shortLabel Mammalia animal
+	longLabel kskdfkskf
+	bigDataUrl https://raw.githubusercontent.com/Smeds/bigWigTest/refs/heads/main/test-Mammalia.bw
+	type bigWig
+        parent multiWigUniqueTrackName on
+	color 0,255,0
+	descriptionUrl https://raw.githubusercontent.com/Smeds/bigWigTest/refs/heads/main/description.html
